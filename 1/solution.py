@@ -10,6 +10,17 @@ def read_file(filename):
     return contents
 
 numbers = read_file("input.txt")
+current_number = numbers[0]
+increased_count = 0
+
+for number in numbers[1:]:
+    if current_number < number:
+        increased_count += 1
+    current_number = number
+
+# Task 1: 1139
+print("Task 1:", increased_count)
+
 current_number1 = numbers[0]
 current_number2 = numbers[1]
 current_number3 = numbers[2]
@@ -24,7 +35,5 @@ for number in numbers[3:]:
     current_number2 = current_number3
     current_number3 = number
 
-print(increased_count)
-
-## task 1: 1139
-## task 2: 1103
+# Task 2: 1103
+print("Task 2:", increased_count)
