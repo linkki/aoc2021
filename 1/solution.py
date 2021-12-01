@@ -1,5 +1,5 @@
 # Advent of Code Day 1
-# Tiedeluokka Linkki, Virpi Sumu
+# Science Lab Linkki, Virpi Sumu
 
 def read_file(filename):
     contents = []
@@ -25,3 +25,6 @@ for number in numbers[3:]:
     current_number3 = number
 
 print(increased_count)
+
+## task 1: 1139
+## task 2: 1103
