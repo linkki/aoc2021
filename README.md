@@ -28,6 +28,7 @@ Ratkaisut striimataan tai postataan videoina Linkin YouTube-kanavalla: https://w
     - vscode: Window Capture (Xcomposite) vscode-ikkunasta ja Video Capture Device kamerasta
     - chrome: Window Capture (Xcomposite) chrome-ikkunasta ja olemassaoleva Video Capture Device, kun loit sen jo edelliseen sceneen
     - mahdollisesti täppää ruutukaappaus-ikkunoiden asetuksista Swap red and blue
-- Kokeile nauhoittaa, katso että ääni tarttuu jne. 
-- Klikkaa Start Streaming oikeasta alakulmasta 
+- jos sinulle sopii vaihdella eri ikkunoiden välillä (eli auki ei ole mitään "turhaa"), voit luoda vain yhden skenen, johon lisäät Screen Capturen ja Video Capturen
+- kokeile nauhoittaa, katso että ääni tarttuu jne. 
+- klikkaa Start Streaming oikeasta alakulmasta 
     - tsekkaa toisella laitteella että toimiihan oikein, äänet kuuluu jne, tai pyydä jotakuta muuta tsekkaamaan
