@@ -4,7 +4,7 @@
 
 Pohja on Pythonille (jotta kansiot tarttuvat mukaan), mutta toteutus voi olla millä kielellä ja tekniikalla tahansa.
 
-Jos ratkaisupohjia tarvitsee muuttaa bulkkina, onnistuu esim bashilla (muokkaa lukuarvoja sen mukaan minkä päivän kohdalla on sopiva pohja ja mistä eteenpäin kopioit sen):
+Jos ratkaisupohjia tarvitsee muuttaa bulkkina, onnistuu esim bashilla (muokkaa lukuarvoja sen mukaan minkä päivän kohdalla on sopiva pohja ja mistä eteenpäin kopioit sen, olettaen että jätät päivän numeron kyseisestä mallipohjasta pois):
 
 for i in {5..25}; do cd $i; rm solution.py; cp ../4/solution.py .; sed -i "s/Day/Day $i/g" solution.py ; cd ..; done
 
