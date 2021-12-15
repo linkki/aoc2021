@@ -62,6 +62,7 @@ file_contents = read_file("input.txt")
 result1 = 0
 result2 = 0
 
+# for debugging:
 #for cave in file_contents:
 #    print(cave, file_contents[cave])
 
@@ -75,7 +76,8 @@ print("Task 1:", result1)
 path_set = set() # each member in a set is unique
 
 for path in find_path2("start", [], ""):
-    path_set.add(','.join(path)) # make a string from the list so the results can be added to the set 
+    # make a string from the list so the results can be added to the set 
+    path_set.add(','.join(path)) 
 
 result2 = len(path_set)
 
