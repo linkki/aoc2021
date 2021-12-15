@@ -2,18 +2,38 @@
 # Science Lab Linkki, Virpi Sumu
 
 def read_file(filename):
-    contents = []
+    template = []
+    rules = {}
     with open(filename) as file:
         for line in file:
-            contents.append((line.strip()))
+            parts = line.strip().split(" -> ")
+            if len(parts) == 1:
+                for c in parts[0]:
+                    template.append(c)
+            elif len(parts) == 2:
+                rules[parts[0]] = parts[1]
 
-    return contents
+    return (template, rules)
 
-file_contents = read_file("input.txt")
+template, rules = read_file("input.txt")
 
-result1 = 0
+from collections import Counter
 
-# Task 1: 
+for i in range(10):
+    counter = 0
+    for n in range(len(template) - 1):
+        key = "".join(template[n+counter:n+counter+2])
+        if key in rules:
+            template.insert(n+1+counter, rules[key])
+            counter += 1
+    print(len(template), Counter(template))
+
+
+c = Counter(template)
+
+result1 = c.most_common()[0][1] - c.most_common()[len(c)-1][1]
+
+# Task 1: 2068
 print("Task 1:", result1)
 
 
