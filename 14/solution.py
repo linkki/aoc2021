@@ -28,7 +28,6 @@ def read_file(filename):
     return (chars, template, rules)
 
 chars, template, rules = read_file("input.txt")
-from collections import Counter
 #print(template, "\n\n", rules, "\n\n", chars)
 
 for i in range(40):
@@ -41,7 +40,7 @@ for i in range(40):
             for result in rules[pair]:
                 new_template[result] += original
     template = new_template
-    if i == 9:
+    if i == 9: # for part 1
         first_template = new_template
 
 for pair in first_template.keys():
